@@ -89,7 +89,7 @@ img {
 }
 .header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .header .contact__adress:first-child {
   margin-left: 93px;
@@ -116,7 +116,7 @@ img {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.5;
+  line-height: 1.61;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
