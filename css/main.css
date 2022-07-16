@@ -624,6 +624,9 @@ button {
 .menu__link:hover, .menu__link:focus {
   color: #2196f3;
 }
+.menu__link:visited {
+  color: #2196f3;
+}
 
 .menuport__list {
   display: flex;
