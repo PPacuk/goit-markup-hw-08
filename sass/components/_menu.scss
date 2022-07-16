@@ -11,13 +11,12 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #212121;
   }
   &__item:nth-child(1) {
     margin-top: 48px;
   }
   &__link {
-    color: #212121;
+    
     text-decoration: none;
     transition: var(--trans);
   }
