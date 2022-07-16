@@ -607,6 +607,8 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 36px;
+  margin-left: 40px;
 }
 .menu__item {
   font-family: "Roboto";
@@ -627,7 +629,7 @@ button {
   color: var(--hover);
 }
 .menu__link:visited {
-  color: var(--second);
+  color: var(--first);
 }
 
 .menuport__list {

@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   gap: 36px;
+  margin-left: 40px;
 
   &__item {
     font-family: 'Roboto';
@@ -13,7 +14,6 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #212121;
-    margin-bottom: ;
   }
   &__link {
     color: #212121;
@@ -25,6 +25,6 @@
     color: var(--hover);
   }
   &__link:visited {
-    color: var(--second);
+    color: var(--first);
   }
 }
