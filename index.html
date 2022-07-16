@@ -14,14 +14,44 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
+    
+
+      <div class="containernav">
         <a class="logo logo--dark-theme" href="https://ppacuk.github.io/web-studio/">
           <span class="logo__accent-text">Web</span>Studio</a> 
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Agencja</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
+            </li>
+          </ul>
 
+          <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+          
+        </nav>
 
+        <script>
+const mobileNav = document.querySelector('.menu');
+const burgerIcon = document.querySelector('.burger');
 
-    <nav class="navbar">
+burgerIcon.addEventListener('click', function(){
+  mobileNav.classList.toggle('active');
+  burgerIcon.classList.toggle('active');
+})
+
+        </script>
+   
+   
+          <!-- <nav class="navbar">
       <ul class="nav-menu">
         <li class="nav-item"></li>
         <a href="#" class="nav-link">A</a>
@@ -35,7 +65,7 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-    </nav>
+    </nav> -->
 
 
           <!-- <nav class="navigation">
