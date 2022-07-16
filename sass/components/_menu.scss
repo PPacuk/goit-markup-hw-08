@@ -2,27 +2,29 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 36px;
 
-&__item:not(:first-child) {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-}
-&__link {
-  color: #212121;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-&__link:hover,
-&__link:focus {
-  color: #2196f3;
-}
-&__link:visited {
-  color: var(--second);
-}
+  &__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    margin-bottom: ;
+  }
+  &__link {
+    color: #212121;
+    text-decoration: none;
+    transition: var(--trans);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--hover);
+  }
+  &__link:visited {
+    color: var(--second);
+  }
 }
