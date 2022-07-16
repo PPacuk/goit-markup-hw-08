@@ -625,7 +625,7 @@ button {
   color: #2196f3;
 }
 .menu__link:visited {
-  color: #2196f3;
+  color: var(--second);
 }
 
 .menuport__list {
