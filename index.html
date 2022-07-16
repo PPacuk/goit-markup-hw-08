@@ -15,7 +15,7 @@
 
   <body>
     
-
+<header class="header">
       <div class="containernav">
         <a class="logo logo--dark-theme" href="https://ppacuk.github.io/web-studio/">
           <span class="logo__accent-text">Web</span>Studio</a> 
@@ -28,9 +28,40 @@
 
    <div class="backdrop-mobile is-hidden" data-mobile>
     <div class="mobile">
-   <svg class="mobile-btn" data-mobile-close>
+   <svg class="mobile_btn" data-mobile-close>
           <use href="./image/icons.svg#icon-close"></use>
         </svg>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link active" href="./index.html">Agencja</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li class="contact__adress">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon mail-icon" width="16px" height="12px">
+                <use href="image/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__adress">
+            <a class="contact__link" href="tel:+48111111111">
+              <svg class="contact__icon" width="10px" height="16px">
+                <use href="image/icons.svg#icon-phone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
    </div>
 
@@ -495,6 +526,46 @@
         </svg>
       </div>
     </div>
+
+     <!--/*========================== modal-mobile ==========================*/ -->
+     <div class="backdrop-mobile is-hidden" data-mobile>
+    <div class="mobile">
+      <svg class=data-mobile-close>
+          <use class="mobile_btn"  href="./image/icons.svg#icon-close"></use>
+        </svg>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link active" href="./index.html">Agencja</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li class="contact__adress">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon mail-icon" width="16px" height="12px">
+                <use href="image/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__adress">
+            <a class="contact__link" href="tel:+48111111111">
+              <svg class="contact__icon" width="10px" height="16px">
+                <use href="image/icons.svg#icon-phone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+   </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/script.js"></script>
