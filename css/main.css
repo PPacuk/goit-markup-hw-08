@@ -62,7 +62,8 @@ img {
 
 .containernav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -285,6 +286,11 @@ img {
   margin: 14px 15px 14px 15px;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+}
+
 .main__btn:hover,
 .main__btn:focus {
   background-color: #2196f3;
@@ -310,9 +316,8 @@ img {
 }
 
 .mobile-btn {
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
 }
 
 .close-btn {
@@ -815,6 +820,7 @@ img {
   border: none;
   background-color: var(--second-color);
   display: flex;
+  box-sizing: border-box;
 }
 
 .backdrop-mobile {
