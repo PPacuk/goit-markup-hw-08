@@ -868,69 +868,11 @@ img {
   left: 0;
 }
 
-.menu {
-  display: flex;
+.backdrop-mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  justify-content: space-around;
-  transform: translate(100%);
-  transition: 0.3s ease-in-out;
-}
-.menu__link {
-  position: relative;
-}
-
-.menu.active {
-  transform: translate(0%);
-}
-
-.containernav {
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  padding: 2em;
-  position: relative;
-}
-
-.burger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: none;
-}
-
-.line {
-  width: 40px;
-  height: 0.3em;
-  background-color: black;
-  margin: 0.7em;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-@media only screen and (max-width: 1000px) {
-  .burger {
-    display: block;
-    transition: 0.3s ease-in-out;
-  }
-  .burger.active .line:first-child {
-    transform: translateY(-300px);
-  }
-  .burger.active .line:nth-child(2) {
-    transform: rotate(-405deg) translateY(8px);
-  }
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-320deg) translateY(-10px);
-  }
-  .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: whitesmoke;
-    height: 796px;
-    flex-direction: column;
-    text-align: center;
-  }
+  height: 100%;
+  background: whitesmoke;
 }/*# sourceMappingURL=main.css.map */

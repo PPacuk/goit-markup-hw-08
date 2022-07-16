@@ -19,54 +19,20 @@
       <div class="containernav">
         <a class="logo logo--dark-theme" href="https://ppacuk.github.io/web-studio/">
           <span class="logo__accent-text">Web</span>Studio</a> 
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">Agencja</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Kontakt</a>
-            </li>
-          </ul>
-
-          <button class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </button>
           
-        </nav>
+   <button type="button" data-mobile-open>
+    <svg>
+      <use href="./image/icons.svg#icon-hamburger"></use>
+    </svg>
+   </button>
 
-        <script>
-const mobileNav = document.querySelector('.menu');
-const burgerIcon = document.querySelector('.burger');
-
-burgerIcon.addEventListener('click', function(){
-  mobileNav.classList.toggle('active');
-  burgerIcon.classList.toggle('active');
-})
-
-        </script>
-   
-   
-          <!-- <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item"></li>
-        <a href="#" class="nav-link">A</a>
-        <li class="nav-item"></li>
-        <a href="#" class="nav-link">A</a>
-        <li class="nav-item"></li>
-        <a href="#" class="nav-link">A</a>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav> -->
-
+   <div class="backdrop-mobile is-hidden" data-mobile>
+    <div class="mobile">
+   <svg class="mobile-btn" data-mobile-close>
+          <use href="./image/icons.svg#icon-close"></use>
+        </svg>
+    </div>
+   </div>
 
           <!-- <nav class="navigation">
           <ul class="menu">
@@ -532,5 +498,6 @@ burgerIcon.addEventListener('click', function(){
 
     <script src="./js/modal.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
