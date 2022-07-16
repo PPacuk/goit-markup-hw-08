@@ -20,10 +20,11 @@
   margin: auto;
   border: none;
 }
-.mobile_btn {
-  width: 17px;
-  height: auto;
-}
+.mobile-btn {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  }
 .close-btn {
   position: absolute;
   top: 8px;
