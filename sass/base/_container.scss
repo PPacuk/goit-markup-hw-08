@@ -3,12 +3,12 @@
   margin: 0 auto;
 }
 
-.containernav{
-  display: 
-  
-  justify-content: center;
+.containernav {
+  display: flex;
+ align-items: center;
   width: 100%;
-}
+  height: 60px;
+  }
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
