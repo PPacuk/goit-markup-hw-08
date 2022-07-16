@@ -6,14 +6,17 @@
   line-height: 1.14285714;
 
   & .container {
-   display: flex;
+    display: flex;
     justify-content: center;
-    
   }
   & .contact__adress:first-child {
-    margin-left: 93px;
+    margin-left: 40px;
+   position: relative;
+    top: 338px;
   }
   & .contact__adress:last-child {
-    margin-left: 50px;
+    margin-left: 40px;
+    position: relative;
+    top: 266px;
   }
 }

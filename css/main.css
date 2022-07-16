@@ -98,10 +98,14 @@ img {
   justify-content: center;
 }
 .header .contact__adress:first-child {
-  margin-left: 93px;
+  margin-left: 40px;
+  position: relative;
+  top: 338px;
 }
 .header .contact__adress:last-child {
-  margin-left: 50px;
+  margin-left: 40px;
+  position: relative;
+  top: 266px;
 }
 
 .main {
@@ -369,7 +373,7 @@ button {
 
 .contact {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .contact__maps {
   font-family: "Roboto";
@@ -395,12 +399,10 @@ button {
 .contact__link:visited {
   color: #757575;
 }
-.contact__link:hover, .contact__link:hover svg, .contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: #2196f3;
-  fill: #2196f3;
 }
 .contact__icon {
-  margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -605,7 +607,6 @@ button {
 
 .menu {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 36px;
   margin-left: 40px;
@@ -614,11 +615,13 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  text-align: center;
+  font-size: 34px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.menu__item:nth-child(1) {
+  margin-top: 48px;
 }
 .menu__link {
   color: #212121;
@@ -630,6 +633,9 @@ button {
 }
 .menu__link:visited {
   color: var(--first);
+}
+.menu__link--color {
+  color: var(--hover);
 }
 
 .menuport__list {

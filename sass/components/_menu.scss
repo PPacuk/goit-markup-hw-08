@@ -1,6 +1,5 @@
 .menu {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 36px;
   margin-left: 40px;
@@ -9,11 +8,13 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
+    font-size: 34px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: #212121;
+  }
+  &__item:nth-child(1) {
+    margin-top: 48px;
   }
   &__link {
     color: #212121;
@@ -26,5 +27,8 @@
   }
   &__link:visited {
     color: var(--first);
+  }
+  &__link--color {
+    color: var(--hover);
   }
 }
