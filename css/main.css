@@ -506,7 +506,8 @@ button {
 }
 .customers__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 .customers__item {

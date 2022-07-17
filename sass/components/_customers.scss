@@ -15,12 +15,13 @@
 }
 &__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 &__item {
   display: flex;
-  justify-content: center;
+    justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
