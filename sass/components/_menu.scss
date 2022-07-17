@@ -16,18 +16,11 @@
     margin-top: 48px;
   }
   &__link {
-    
     text-decoration: none;
     transition: var(--trans);
   }
   &__link:hover,
   &__link:focus {
-    color: var(--hover);
-  }
-  &__link:visited {
-    color: var(--first);
-  }
-  &__link--color {
     color: var(--hover);
   }
 }

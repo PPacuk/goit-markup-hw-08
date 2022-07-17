@@ -1,6 +1,9 @@
 .social-mobile {
   display: flex;
   gap: 20px;
+  position: relative;
+  top: 380px;
+  left: 40px;
 
   &__item {
     font-family: 'Roboto';
@@ -20,7 +23,7 @@
     text-decoration: none;
   }
 }
-.pala::before {
+.spacer::before {
   content: '';
   display: block;
   width: 22px;

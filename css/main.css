@@ -647,12 +647,6 @@ button {
 .menu__link:hover, .menu__link:focus {
   color: var(--hover);
 }
-.menu__link:visited {
-  color: var(--first);
-}
-.menu__link--color {
-  color: var(--hover);
-}
 
 .menuport__list {
   display: flex;
@@ -879,6 +873,9 @@ button {
 .social-mobile {
   display: flex;
   gap: 20px;
+  position: relative;
+  top: 380px;
+  left: 40px;
 }
 .social-mobile__item {
   font-family: "Roboto";
@@ -898,7 +895,7 @@ button {
   text-decoration: none;
 }
 
-.pala::before {
+.spacer::before {
   content: "";
   display: block;
   width: 22px;
