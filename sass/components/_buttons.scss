@@ -37,6 +37,11 @@ button{
   cursor: pointer;
   padding: 10px;
 }
+ .close-btn--rim {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  }
 .submit-btn {
   max-width: 200px;
   height: 50px;
@@ -54,7 +59,7 @@ button{
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 40px;
-  transform: translate(50%);
+  transform: translate(43%);
   cursor: pointer;
 }
 .signup__btn {

@@ -211,7 +211,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   display: block;
-  margin: 40px 40px 12px 40px;
+  margin: 40px 40px 2px 40px;
 }
 .modal__form {
   display: flex;
@@ -327,6 +327,12 @@ button {
   padding: 10px;
 }
 
+.close-btn--rim {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
 .submit-btn {
   max-width: 200px;
   height: 50px;
@@ -344,7 +350,7 @@ button {
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 40px;
-  transform: translate(50%);
+  transform: translate(43%);
   cursor: pointer;
 }
 
