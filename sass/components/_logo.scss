@@ -5,8 +5,7 @@
   font-size: 26px;
   line-height: 1.19230769;
   text-decoration: none;
-  position: absolute;
-  left: 15px;
+  text-align: center;
 
 &__accent-text {
   color: #2196f3;
@@ -17,6 +16,7 @@
 }
 .logo--light-theme {
   color: #ffffff;
+
 }
 .logo--light-theme:visited {
   color: #ffffff;
