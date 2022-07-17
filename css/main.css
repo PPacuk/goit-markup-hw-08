@@ -145,6 +145,10 @@ img {
   padding-bottom: 60px;
 }
 
+.active {
+  color: #2196f3;
+}
+
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -409,9 +413,15 @@ button {
   color: #757575;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
 .contact__link--color {
-  color: #2196F3;
+  color: #2196f3;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -864,4 +874,38 @@ button {
   width: 100%;
   height: 100%;
   background: whitesmoke;
+}
+
+.social-mobile {
+  display: flex;
+  gap: 20px;
+}
+.social-mobile__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.social-mobile__item::before {
+  display: block;
+  content: "";
+  border-right: 10px solid red;
+}
+.social-mobile__link {
+  text-decoration: none;
+}
+
+.pala::before {
+  content: "";
+  display: block;
+  width: 22px;
+  border: 1px solid;
+  position: relative;
+  left: -21px;
+  color: var(--third-color);
+  transform: rotate(90deg);
+  background-color: var(--third-color);
 }/*# sourceMappingURL=main.css.map */

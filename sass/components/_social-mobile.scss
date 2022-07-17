@@ -1,0 +1,33 @@
+.social-mobile {
+  display: flex;
+  gap: 20px;
+
+  &__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  &__item::before {
+    display: block;
+    content: '';
+    border-right: 10px solid red;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}
+.pala::before {
+  content: '';
+  display: block;
+  width: 22px;
+  border: 1px solid;
+  position: relative;
+  left: -21px;
+  color: var(--third-color);
+  transform: rotate(90deg);
+  background-color: var(--third-color);
+}
