@@ -12,7 +12,6 @@
     font-size: 18px;
     line-height: 1.22px;
     letter-spacing: 0.02em;
-    color: #2196f3;
   }
   &__item::before {
     display: block;
@@ -21,6 +20,7 @@
   }
   &__link {
     text-decoration: none;
+    color: #2196f3;
   }
 }
 .spacer::before {
