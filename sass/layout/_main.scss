@@ -2,24 +2,24 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../image/imgbgmob@1x.jpg);
   height: 400px;
-  min-width: 400px;
+  width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   &__title {
-    width: 365px;
-    height: 84px;
+    max-width: 365px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding-top: 118px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.61;
+    line-height: 1.62;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
   }
 }

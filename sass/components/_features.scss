@@ -1,22 +1,23 @@
 .features {
-    display: flex;
-    padding: 0;
-    padding-top: 94px;
-    margin-bottom: 30px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  padding: 0;
+  padding-top: 94px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
   &__description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     color: #757575;
-    max-width: 270px;
-    height: 120px;
     line-height: 1.5;
     font-size: 14px;
     letter-spacing: 0.03em;
     display: flex;
     justify-content: center;
+    letter-spacing: 0.03em;
+    margin: 0.7em auto;
+    width: calc(100% - 30px);
   }
   &__title {
     font-family: 'Roboto';
@@ -25,16 +26,14 @@
     font-size: 14px;
     line-height: 1.14285714;
     text-transform: uppercase;
-    max-width: 450px;
-    height: 50px;
     text-align: center;
     display: block;
     margin-bottom: 10px;
+    letter-spacing: 0.03em;
   }
   &__icon {
     width: 70px;
     height: 70px;
     position: absolute;
   }
- 
 }

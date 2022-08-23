@@ -14,59 +14,66 @@
   </head>
 
   <body>
-    
-<header class="header">
+    <header class="header">
       <div class="containernav">
         <a class="logo logo--dark-theme" href="https://ppacuk.github.io/web-studio/">
-          <span class="logo__accent-text">Web</span>Studio</a> 
-          
-            <button class="hamburger" type="button" data-mobile-open>
-              <svg class="mobile-btn">
-                 <use href="./image/icons.svg#icon-hamburger"></use>
-              </svg>
-            </button>
+          <span class="logo__accent-text">Web</span>Studio</a
+        >
 
-     <!--/*========================== modal-mobile ==========================*/ -->
+        <button class="hamburger" type="button" data-mobile-open>
+          <svg class="mobile-btn">
+            <use href="./image/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
 
-   <div class="backdrop-mobile is-hidden" data-mobile>
-    <div class="mobile">
-   <svg class="close-btn" data-mobile-close>
-          <use href="./image/icons.svg#icon-close"></use>
-        </svg>
-        <nav class="navigation">
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link active" href="./index.html">Agencja</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__adress">
-            <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contact__adress">
-            <a class="contact__link contact__link--color" href="tel:+48111111111">
-              +48 111 111 111</a
-            >
-          </li>
-        </ul>
-        <ul class="social-mobile">
-          <li class="social-mobile__item"><a href="#" class="social-mobile__link">Instagram</a></li>
-          <li class="social-mobile__item spacer"><a href="#" class="social-mobile__link">Twitter</a></li>
-          <li class="social-mobile__item spacer"><a href="#" class="social-mobile__link">Facebook</a></li>
-          <li class="social-mobile__item spacer"><a href="#" class="social-mobile__link">LinkedIn</a></li>
-        </ul>
-      
-    </div>
-   </div>
+        <!--/*========================== modal-mobile ==========================*/ -->
 
-          <!-- <nav class="navigation">
+        <div class="backdrop-mobile is-hidden" data-mobile>
+          <div class="mobile">
+            <svg class="close-btn" data-mobile-close>
+              <use href="./image/icons.svg#icon-close"></use>
+            </svg>
+            <nav class="navigation">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="menu__link active" href="./index.html">Agencja</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li class="contact__adress">
+                <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="contact__adress">
+                <a class="contact__link contact__link--color" href="tel:+48111111111">
+                  +48 111 111 111</a
+                >
+              </li>
+            </ul>
+            <ul class="social-mobile">
+              <li class="social-mobile__item">
+                <a href="#" class="social-mobile__link">Instagram</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">Twitter</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">Facebook</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <nav class="navigation">
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link active" href="./index.html">Agencja</a>
@@ -97,8 +104,8 @@
           </li>
         </ul>
       </nav> -->
-      </div>
-    </header>
+     <!-- </div> -->
+  </header>
     <main>
       <section class="main">
         <h1 class="main__title">efektywne rozwiązania dla waszego biznesu</h1>
@@ -182,13 +189,14 @@
           </ul>
         </div>
       </section> -->
-      <section class="crew">
+      
         <div class="container">
+          <section class="crew">
           <h2 class="crew__title">Nasz zespół</h2>
           <ul class="crew__list">
             <li class="crew__item">
               <figure class="crew__card">
-                <img src="./image/johndoe1c.jpg" alt="John-Doe-1-c.jpg" width="270" height="260" />
+                <img src="./image/mob/johndoemob1c@1x.jpg" alt="John-Doe-1.jpg" />
                 <figcaption>
                   <h3 class="crew__name">John Doe</h3>
                   <div class="crew__job">Product Designer</div>
@@ -353,7 +361,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers__title">Nasi klienci</h2>
           <ul class="customers__list">
@@ -401,9 +409,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="containerflex">
         <div class="container-contact">
           <a class="logo logo--light-theme" href="https://ppacuk.github.io/web-studio/"
@@ -453,8 +461,8 @@
                 </a>
               </li>
             </ul>
-          </div> -->
-         </section>
+          </div>
+        </section>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
           <div class="signup">
@@ -472,7 +480,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--/*========================== modal ==========================*/ -->
     <div class="backdrop is-hidden" data-modal>

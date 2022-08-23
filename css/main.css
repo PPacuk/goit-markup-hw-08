@@ -56,37 +56,24 @@ img {
   display: block;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 100%;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 auto;
 }
 
 .containernav {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 60px;
+  padding: 0 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768pxpx;
-    padding: 0 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    padding: 0 15px;
-  }
-}
 .containerflex {
   width: 100%;
   margin: 0 auto;
@@ -102,7 +89,7 @@ img {
 }
 
 .container__features {
-  max-width: 450px;
+  width: calc(100vw - 30px);
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -140,25 +127,25 @@ img {
 .main {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/imgbgmob@1x.jpg);
   height: 400px;
-  min-width: 400px;
+  width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .main__title {
-  width: 365px;
-  height: 84px;
+  max-width: 365px;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding-top: 118px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .footer {
@@ -339,10 +326,11 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: block;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   margin: auto;
   border: none;
+  letter-spacing: 0.06em;
 }
 
 .mobile-btn {
@@ -459,23 +447,26 @@ button {
 
 .crew {
   background-color: #f5f4fa;
+  width: 100vw;
+  margin: 0 auto;
 }
 .crew__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .crew__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16666667;
   text-align: center;
-  margin-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 30px;
+  padding-top: 60px;
+  letter-spacing: 0.03em;
 }
 .crew__name {
   font-family: "Roboto";
@@ -495,8 +486,8 @@ button {
   background-color: #ffffff;
 }
 .crew__card {
-  width: 270px;
-  height: 428px;
+  width: calc(100% - 30px);
+  height: 622px;
   background-color: #ffffff;
   text-align: center;
   margin: 0px;
@@ -630,13 +621,14 @@ button {
   font-style: normal;
   font-weight: 400;
   color: #757575;
-  max-width: 270px;
-  height: 120px;
   line-height: 1.5;
   font-size: 14px;
   letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
+  letter-spacing: 0.03em;
+  margin: 0.7em auto;
+  width: calc(100% - 30px);
 }
 .features__title {
   font-family: "Roboto";
@@ -645,11 +637,10 @@ button {
   font-size: 14px;
   line-height: 1.14285714;
   text-transform: uppercase;
-  max-width: 450px;
-  height: 50px;
   text-align: center;
   display: block;
   margin-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 .features__icon {
   width: 70px;
