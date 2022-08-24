@@ -28,6 +28,7 @@
     line-height: 1.875;
     background-color: #ffffff;
     margin-top: 30px;
+    letter-spacing: 0.03em;
   }
   &__job {
     font-family: 'Roboto';
@@ -36,15 +37,25 @@
     line-height: 1.875;
     color: #757575;
     background-color: #ffffff;
+    letter-spacing: 0.03em;
   }
   &__card {
-    width: calc(100% - 30px);
-    height: 622px;
+    max-width: 450px;
+    max-height: 622px;
+    margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
-    margin: 0px;
     margin-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 0 auto;
+  }
+  &__item{
+    width: calc(100% - 30px);
+    margin: 0 auto;
   }
 }
