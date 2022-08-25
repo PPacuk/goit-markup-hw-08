@@ -1,7 +1,7 @@
 .container {
-  max-width: 100%;
-  align-items: center;
+  width: 100vw;
   margin: 0 auto;
+  justify-content: center;
 }
 .containernav {
   display: flex;
