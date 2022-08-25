@@ -1,7 +1,6 @@
 .container {
   width: 100vw;
-  margin: 0 auto;
-  justify-content: center;
+  margin: 0 auto 60px auto;
 }
 .containernav {
   display: flex;
@@ -41,6 +40,10 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  // justify-content: flex-start;
+  // gap: 70px;
+  align-items: center;
+  padding-bottom: 60px;
 }
 .container-contact {
   display: flex;
