@@ -941,6 +941,9 @@ button {
   line-height: 1.22px;
   letter-spacing: 0.02em;
 }
+.social-mobile__item:first-child {
+  margin-left: 40px;
+}
 .social-mobile__item::before {
   display: block;
   content: "";
@@ -951,9 +954,6 @@ button {
   color: #2196f3;
   margin-top: 64px;
   margin-bottom: 48px;
-}
-.social-mobile__link:first-child {
-  margin-left: 40px;
 }
 
 .spacer::before {
