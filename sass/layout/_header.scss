@@ -11,12 +11,14 @@
   }
   & .contact__adress:first-child {
     margin-left: 40px;
-   position: relative;
-    top: 338px;
+    margin-top: 302px;
+  //  position: relative;
+  //   top: 338px;
   }
   & .contact__adress:last-child {
     margin-left: 40px;
-    position: relative;
-    top: 266px;
+    margin-top: 32px;
+    // position: relative;
+    // top: 266px;
   }
 }

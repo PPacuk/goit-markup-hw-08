@@ -116,13 +116,11 @@ img {
 }
 .header .contact__adress:first-child {
   margin-left: 40px;
-  position: relative;
-  top: 338px;
+  margin-top: 302px;
 }
 .header .contact__adress:last-child {
   margin-left: 40px;
-  position: relative;
-  top: 266px;
+  margin-top: 32px;
 }
 
 .main {
@@ -374,7 +372,8 @@ button {
 }
 
 .signup__btn {
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -395,6 +394,7 @@ button {
 .contact {
   display: flex;
   flex-direction: column;
+  margin-bottom: 48px;
 }
 .contact__maps {
   font-family: "Roboto";
@@ -442,8 +442,11 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.17px;
+  line-height: 40px;
   letter-spacing: 0.02em;
+}
+.contact__adress {
+  display: flex;
 }
 
 .crew {
@@ -723,7 +726,10 @@ button {
 .newsletter {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  width: 100vw;
+  margin: 0 auto;
 }
 .newsletter__name {
   font-family: "Roboto";
@@ -736,7 +742,7 @@ button {
   color: #ffffff;
   width: 207px;
   margin-top: 12px;
-  position: relative;
+  letter-spacing: 0.03em;
 }
 
 .policy__text::before {
@@ -818,7 +824,8 @@ button {
 }
 .signup__input {
   box-sizing: border-box;
-  width: 358px;
+  width: 95vw;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -832,6 +839,7 @@ button {
   background-color: #2f303a;
   outline: none;
   color: #eeeeee;
+  margin-bottom: 20px;
 }
 .signup__icon {
   width: 24px;
@@ -842,6 +850,9 @@ button {
 }
 .signup__form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 .social__icon {
@@ -914,14 +925,13 @@ button {
   width: 100%;
   height: 100%;
   background: whitesmoke;
+  z-index: 10;
 }
 
 .social-mobile {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  position: relative;
-  top: 380px;
-  left: 40px;
 }
 .social-mobile__item {
   font-family: "Roboto";
@@ -939,6 +949,11 @@ button {
 .social-mobile__link {
   text-decoration: none;
   color: #2196f3;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+.social-mobile__link:first-child {
+  margin-left: 40px;
 }
 
 .spacer::before {

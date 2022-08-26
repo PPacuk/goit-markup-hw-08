@@ -1,6 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
+  margin-bottom: 48px;
 
   &__maps {
     font-family: 'Roboto';
@@ -53,8 +54,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.17px;
-
+    line-height: 40px;
     letter-spacing: 0.02em;
+  }
+  &__adress {
+    display: flex;
   }
 }
