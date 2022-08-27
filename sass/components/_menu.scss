@@ -24,14 +24,18 @@
     color: var(--hover);
   }
 }
-@media (min-width:768px){
-  .menu{
+@media (min-width: 768px) {
+  .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  &__item{
-    margin: 0px;
-    font-size: 14px;
+    &__item {
+      margin: 0px;
+      font-size: 14px;
+    }
+    &__item:nth-child(1) {
+      margin-top: 0;
+    }
   }
-  }
+}

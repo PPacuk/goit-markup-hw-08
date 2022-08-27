@@ -441,7 +441,7 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 12px;
   line-height: 28px;
   letter-spacing: 0.02em;
 }
@@ -728,8 +728,8 @@ button {
     margin: 0px;
     font-size: 14px;
   }
-  .menu__item {
-    margin: 0;
+  .menu__item:nth-child(1) {
+    margin-top: 0;
   }
 }
 .menuport__list {
