@@ -60,4 +60,37 @@
   &__adress {
     display: flex;
   }
+  &__adress:first-child {
+    margin-left: 40px;
+    margin-top: 302px;
+    //  position: relative;
+    //   top: 338px;
+  }
+  &__adress:last-child {
+    margin-left: 40px;
+    margin-top: 32px;
+    // position: relative;
+    // top: 266px;
+  }
+}
+//<-------------tablet------------->
+@media (min-width: 768px) {
+  .contact {
+    // margin-left: 101px;
+    // margin-top: 50px;
+    // margin-right: auto;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    &__adress:first-child {
+      margin: 0;
+    }
+    &__adress:last-child {
+      margin: 0;
+    }
+    &__icon{
+      margin-right:8px;
+    }
+  }
 }

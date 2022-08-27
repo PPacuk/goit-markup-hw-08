@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 60px;
   margin-left: 40px;
 
   &__item {
@@ -24,6 +24,7 @@
     color: var(--hover);
   }
 }
+//<-------------tablet------------->
 @media (min-width: 768px) {
   .menu {
     display: flex;
@@ -36,6 +37,7 @@
     }
     &__item:nth-child(1) {
       margin-top: 0;
+      margin-left: 83px;
     }
   }
 }
