@@ -1,10 +1,11 @@
 .menuport{
 &__list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 94px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 &__btn {
   cursor: pointer;
@@ -17,12 +18,26 @@
   background-color: rgba(245, 244, 250, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 38px;
-  padding: 6px 22px;
   border-radius: 4px;
 }
 &__btn:hover,
 &__btn:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+&__btn--size1 {
+width: 103px;
+}
+&__btn--size2 {
+  width: 128px;
+}
+&__btn--size3 {
+  width: 145px;
+}
+&__btn--size4 {
+  width: 103px;
+}
+&__btn--size5 {
+  width: 130px;
 }
 }

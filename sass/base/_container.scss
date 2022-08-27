@@ -2,12 +2,17 @@
   width: 100vw;
   margin: 0 auto 60px auto;
 }
+.container-menuport {
+  width: 100vw;
+  margin: 0 auto;
+}
 .containernav {
   display: flex;
   align-items: center;
   width: 100vw;
   height: 60px;
   padding: 0 15px;
+  border-bottom: 1px solid #ECECEC;
 }
 // @media screen and (max-width: 768px) {
 //   .container {

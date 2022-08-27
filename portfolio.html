@@ -15,10 +15,63 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="containernav">
         <a class="logo logo--dark-theme" href="https://ppacuk.github.io/web-studio/">
           <span class="logo__accent-text">Web</span>Studio</a>
-        <nav class="navigation">
+        <button class="hamburger" type="button" data-mobile-open>
+          <svg class="mobile-btn">
+            <use href="./image/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+
+        <!--/*========================== modal-mobile ==========================*/ -->
+
+        <div class="backdrop-mobile is-hidden" data-mobile>
+          <div class="mobile">
+            <svg class="close-btn" data-mobile-close>
+              <use href="./image/icons.svg#icon-close"></use>
+            </svg>
+            <nav class="navigation">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="menu__link active" href="./index.html">Agencja</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contact">
+             <li class="contact__adress">
+                <a class="contact__link contact__link--color" href="tel:+48111111111">
+                  +48 111 111 111</a>
+              </li> 
+              <li class="contact__adress">
+                <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              
+            </ul>
+            <ul class="social-mobile">
+              <li class="social-mobile__item">
+                <a href="#" class="social-mobile__link">Instagram</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">Twitter</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">Facebook</a>
+              </li>
+              <li class="social-mobile__item spacer">
+                <a href="#" class="social-mobile__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          <!-- <nav class="navigation">
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link" href="./index.html">Agencja</a>
@@ -48,33 +101,33 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
 
     <main>
       <section class="menuport">
-        <div class="container">
+        <div class="container-menuport">
           <h2 hidden>walidator fix</h2>
           <ul class="menuport__list">
             <li class="menuport__item">
-              <button class="menuport__btn" type="button">Wszystkie</button>
+              <button class="menuport__btn menuport__btn--size1" type="button">Wszystkie</button>
             </li>
             <li class="menuport__item">
-              <button class="menuport__btn" type="button">Strony</button>
+              <button class="menuport__btn menuport__btn--size2" type="button">Strony</button>
             </li>
             <li class="menuport__item">
-              <button class="menuport__btn" type="button">Aplikacje</button>
+              <button class="menuport__btn menuport__btn--size3" type="button">Aplikacje</button>
             </li>
             <li class="menuport__item">
-              <button class="menuport__btn" type="button">Dizajn</button>
+              <button class="menuport__btn menuport__btn--size4" type="button">Dizajn</button>
             </li>
             <li class="menuport__item">
-              <button class="menuport__btn" type="button">Marketing</button>
+              <button class="menuport__btn menuport__btn--size5" type="button">Marketing</button>
             </li>
           </ul>
         </div>
       </section>
-      <section class="example">
+      <!-- <section class="example">
         <div class="container">
           <ul class="example__list">
             <li>
@@ -268,57 +321,60 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
        <footer class="footer">
       <div class="containerflex">
-        <div class="container-contact">
+        <!-- <div class="container-contact"> -->
           <a class="logo logo--light-theme" href="https://ppacuk.github.io/web-studio/"
-            ><span class="logo__accent-text">Web</span>Studio</a>
+            ><span class="logo__accent-text">Web</span>Studio</a
+          >
           <address class="contact__maps">
             <a
               href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305286,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
-              ><span class="contact__maps contact__maps--highlight"> m. Warszawa, Aleje Jerozolimskie 21</span></a
+              ><span class="contact__maps contact__maps--highlight">
+                m. Warszawa, Aleje Jerozolimskie 21</span
+              ></a
             >
             <p><a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p><a class="contact__link" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
         </div>
         <section class="social">
-        <div class="container-social">
-          <h3 class="social__title">dołącz do nas</h3>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--dark" href="#">
-                <svg class="social__icon social__icon--dark">
-                  <use href="./image/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--dark" href="#">
-                <svg class="social__icon social__icon--dark">
-                  <use href="./image/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--dark" href="#">
-                <svg class="social__icon social__icon--dark">
-                  <use href="./image/icons.svg#icon-facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--dark" href="#">
-                <svg class="social__icon social__icon--dark">
-                  <use href="./image/icons.svg#icon-linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="container-social">
+            <h3 class="social__title">dołącz do nas</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--dark" href="#">
+                  <svg class="social__icon social__icon--dark">
+                    <use href="./image/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--dark" href="#">
+                  <svg class="social__icon social__icon--dark">
+                    <use href="./image/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--dark" href="#">
+                  <svg class="social__icon social__icon--dark">
+                    <use href="./image/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--dark" href="#">
+                  <svg class="social__icon social__icon--dark">
+                    <use href="./image/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
@@ -338,5 +394,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>
