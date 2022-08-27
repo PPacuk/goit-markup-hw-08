@@ -565,7 +565,7 @@ button {
 }
 
 .example {
-  background-color: #f5f4fa;
+  background-color: #ffffff;
   max-width: 450px;
   margin: 0 auto 60px auto;
   width: calc(100% - 30px);
@@ -600,10 +600,10 @@ button {
 .example__list {
   display: flex;
   flex-direction: column;
+  gap: 30px 0;
   justify-content: center;
   align-items: center;
   max-width: 450px;
-  margin: 0 auto;
 }
 .example__item {
   max-width: 450px;
