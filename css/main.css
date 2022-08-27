@@ -79,6 +79,11 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+@media (min-width: 768px) {
+  .containernav {
+    height: 80px;
+  }
+}
 .containerflex {
   width: 100%;
   margin: 0 auto;
@@ -115,10 +120,6 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14285714;
-}
-.header .container {
-  display: flex;
-  justify-content: center;
 }
 .header .contact__adress:first-child {
   margin-left: 40px;
@@ -162,7 +163,13 @@ img {
   justify-items: center;
 }
 
-.active {
+.active .active::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid;
+  position: relative;
+  margin-top: -4px;
+  top: 32px;
   color: #2196f3;
 }
 
@@ -710,6 +717,21 @@ button {
   color: var(--hover);
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu__item {
+    margin: 0px;
+    font-size: 14px;
+  }
+  .menu__item {
+    margin: 0;
+  }
+}
 .menuport__list {
   display: flex;
   justify-content: start;
@@ -754,6 +776,11 @@ button {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -950,6 +977,11 @@ button {
   right: 15px;
 }
 
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
 .backdrop-mobile {
   position: fixed;
   left: 0;

@@ -5,3 +5,8 @@
   position:absolute;
   right: 15px;
 }
+@media (min-width:768px){
+  .hamburger{
+    display: none;
+  }
+}
