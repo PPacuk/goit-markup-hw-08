@@ -65,6 +65,16 @@ img {
   margin: 0 auto 60px auto;
 }
 
+.container-card {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.container-example {
+  width: 100vw;
+  margin: 0 auto;
+}
+
 .container-menuport {
   width: 100vw;
   margin: 0 auto;
@@ -565,12 +575,15 @@ button {
 }
 
 .example {
-  margin-bottom: 94px;
-  margin-top: 50px;
+  background-color: #f5f4fa;
+  max-width: 450px;
+  margin: 0 auto 60px auto;
 }
 .example__box {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
 }
 .example__overlay {
   position: absolute;
@@ -588,24 +601,29 @@ button {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 49px 45px 49px 24px;
-  width: 301px;
-  height: 196px;
+  padding: 77px 24px;
 }
-.example__box:hover, .example__img:hover .example__overlay {
+.example__box:hover, .example__card:hover .example__overlay {
   transform: translateY(0);
 }
 .example__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
 }
-.example__img {
-  margin: 0px;
+.example__item {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.example__card {
   border: 1px solid rgb(238, 238, 238);
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
 }
-.example__img:hover, .example__img:hover figure .example__img {
+.example__card:hover, .example__card:hover figure .example__img {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -628,6 +646,11 @@ button {
   color: #757575;
   text-align: left;
   margin-left: 24px;
+}
+.example__img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
 }
 
 .features {
@@ -700,8 +723,7 @@ button {
   justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin: 60px auto 40px 15px;
 }
 .menuport__btn {
   cursor: pointer;
