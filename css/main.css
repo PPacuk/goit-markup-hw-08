@@ -65,16 +65,6 @@ img {
   margin: 0 auto 60px auto;
 }
 
-.container-card {
-  width: 100vw;
-  margin: 0 auto;
-}
-
-.container-example {
-  width: 100vw;
-  margin: 0 auto;
-}
-
 .container-menuport {
   width: 100vw;
   margin: 0 auto;
@@ -578,6 +568,7 @@ button {
   background-color: #f5f4fa;
   max-width: 450px;
   margin: 0 auto 60px auto;
+  width: calc(100% - 30px);
 }
 .example__box {
   position: relative;
@@ -612,6 +603,7 @@ button {
   justify-content: center;
   align-items: center;
   max-width: 450px;
+  margin: 0 auto;
 }
 .example__item {
   max-width: 450px;
