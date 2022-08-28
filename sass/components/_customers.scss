@@ -6,8 +6,8 @@
     font-size: 36px;
     line-height: 1.16666667;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    margin-bottom: 30px;
+    margin-top: 60px;
   }
   &__icon {
     fill: #afb1b8;
@@ -53,5 +53,20 @@
   &__icon:hover,
   &__icon:focus {
     fill: #2196f3;
+  }
+}
+
+//<-------------tablet------------->
+@media (min-width:768px){
+  .customers{
+
+    &__list{
+      flex-basis: calc(100% / 3);
+      max-width: 768px;
+      margin-bottom: 60px;
+    }
+    &__item{
+      man-width:226px;
+    }
   }
 }

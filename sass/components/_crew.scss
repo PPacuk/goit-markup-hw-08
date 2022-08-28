@@ -2,6 +2,7 @@
   background-color: #f5f4fa;
   width: 100vw;
   margin: 0 auto;
+  padding-bottom: 15px;
   &__list {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@
     margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
-    margin-bottom: 94px;
+    margin-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
@@ -59,3 +60,25 @@
     margin: 0 auto;
   }
 }
+@media (min-width:768px){
+  .crew{
+padding-bottom: 60px;
+
+  &__item{
+  width: calc(50% - 30px);
+  }
+  &__card{
+    max-width: 354px;
+    max-height: 536px;
+    margin-bottom: 0px;
+  }
+  &__list{
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 738px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
+}
+

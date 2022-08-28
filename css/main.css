@@ -65,6 +65,11 @@ img {
   margin: 0 auto 60px auto;
 }
 
+.container-crew {
+  width: 100vw;
+  margin: 0 auto 60px auto;
+}
+
 .container-menuport {
   width: 100vw;
   margin: 0 auto;
@@ -96,7 +101,7 @@ img {
 }
 
 .container__features {
-  width: calc(100vw - 30px);
+  width: calc(100% - 30px);
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -110,8 +115,15 @@ img {
 }
 
 @media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+  }
   .containernav {
     height: 80px;
+  }
+  .container__features {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .header {
@@ -484,6 +496,7 @@ button {
   background-color: #f5f4fa;
   width: 100vw;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
 .crew__list {
   display: flex;
@@ -528,7 +541,7 @@ button {
   margin: 0 auto;
   background-color: #ffffff;
   text-align: center;
-  margin-bottom: 94px;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .crew__img {
@@ -541,6 +554,26 @@ button {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .crew {
+    padding-bottom: 60px;
+  }
+  .crew__item {
+    width: calc(50% - 30px);
+  }
+  .crew__card {
+    max-width: 354px;
+    max-height: 536px;
+    margin-bottom: 0px;
+  }
+  .crew__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 738px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
 .customers__title {
   font-family: "Roboto";
   font-style: normal;
@@ -548,8 +581,8 @@ button {
   font-size: 36px;
   line-height: 1.16666667;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 94px;
+  margin-bottom: 30px;
+  margin-top: 60px;
 }
 .customers__icon {
   fill: #afb1b8;
@@ -593,6 +626,16 @@ button {
   fill: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .customers__list {
+    flex-basis: 33.3333333333%;
+    max-width: 768px;
+    margin-bottom: 60px;
+  }
+  .customers__item {
+    man-width: 226px;
+  }
+}
 .example {
   background-color: #ffffff;
   max-width: 450px;
@@ -676,6 +719,7 @@ button {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   padding-top: 60px;
   margin-bottom: 30px;
@@ -714,6 +758,26 @@ button {
   position: absolute;
 }
 
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 30px;
+    max-width: 738px;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+  }
+  .features__item {
+    width: 354px;
+  }
+  .features__title {
+    text-align: start;
+    margin-top: 30px;
+  }
+  .features__description {
+    width: 100%;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -947,7 +1011,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  max-width: 270px;
+  max-width: 206px;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;

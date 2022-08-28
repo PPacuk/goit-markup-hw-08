@@ -2,6 +2,10 @@
   width: 100vw;
   margin: 0 auto 60px auto;
 }
+.container-crew {
+  width: 100vw;
+  margin: 0 auto 60px auto;
+}
 .container-menuport {
   width: 100vw;
   margin: 0 auto;
@@ -38,7 +42,7 @@
 //   padding-top: 12px;
 // }
 .container__features {
-  width: calc(100vw - 30px);
+  width: calc(100% - 30px);
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -54,8 +58,15 @@
 
 //<-------------tablet------------->
 @media (min-width:768px){
-.containernav {
+.container{
+  margin: 0 auto;
+
+}
+  .containernav {
   height: 80px;
-  
+}
+.container__features{
+  width: 100%;
+  margin:0 auto;
 }
 }
