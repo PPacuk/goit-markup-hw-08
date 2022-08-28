@@ -48,12 +48,14 @@
               <svg class="contact__icon" width="10px" height="16px">
                 <use href="image/icons.svg#icon-phone"></use>
               </svg>
-              +48 111 111 111</a
+              +48 111
+               111 111</a
             >
             </li>
           </ul>
         </nav>
       </div>
+      
     </header>
     
 <main>
@@ -381,7 +383,8 @@
     </main>
     <footer class="footer">
       <div class="containerflex">
-        <!-- <div class="container-contact"> -->
+        <div class="container-contact">
+         <div class="container-tabcontact">
           <a class="logo logo--light-theme" href="https://ppacuk.github.io/web-studio/"
             ><span class="logo__accent-text">Web</span>Studio</a
           >
@@ -392,10 +395,10 @@
                 m. Warszawa, Aleje Jerozolimskie 21</span
               ></a
             >
-            <p><a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a class="contact__link" href="tel:+48111111111">+48 111 111 111</a></p>
+            <p><a class="contact__link contact__link--footer" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <a class="contact__link contact__link--footer" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
-        </div>
+          </div>
         <section class="social">
           <div class="container-social">
             <h3 class="social__title">dołącz do nas</h3>
@@ -431,6 +434,7 @@
             </ul>
           </div>
         </section>
+        </div>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
           <div class="signup">
@@ -507,11 +511,11 @@
      <!--/*========================== modal-mobile ==========================*/ -->
 
         <div class="backdrop-mobile is-hidden" data-mobile>
-          <div class="mobile">
+          <div class="container-mob">
             <svg class="close-btn" data-mobile-close>
               <use href="./image/icons.svg#icon-close"></use>
             </svg>
-            <nav class="navigation">
+            <!-- <div class="containermob"> -->
               <ul class="menu">
                 <li class="menu__item">
                   <a class="menu__link active" href="./index.html">Agencja</a>
@@ -523,7 +527,6 @@
                   <a class="menu__link" href="">Kontakt</a>
                 </li>
               </ul>
-            </nav>
             <ul class="contact">
              <li class="contact__adress">
                 <a class="contact__link contact__link--color" href="tel:+48111111111">
@@ -549,6 +552,7 @@
               </li>
             </ul>
           </div>
+        </div>
         </div>
 
     <script src="./js/modal.js"></script>

@@ -96,8 +96,6 @@ img {
 .container-contact {
   display: flex;
   flex-direction: column;
-  width: 246px;
-  height: 81px;
 }
 
 .container__features {
@@ -114,6 +112,15 @@ img {
   margin-right: auto;
 }
 
+.container-mob {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-tabcontact {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .container {
     margin: 0 auto;
@@ -124,6 +131,12 @@ img {
   .container__features {
     width: 100%;
     margin: 0 auto;
+  }
+  .container-contact {
+    flex-direction: row;
+  }
+  .container-tabcontact {
+    margin-right: 144px;
   }
 }
 .header {
@@ -451,7 +464,7 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
 }
@@ -463,6 +476,11 @@ button {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+}
+.contact__link--footer {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px auto;
 }
 .contact__adress {
   display: flex;
@@ -490,6 +508,9 @@ button {
   }
   .contact__icon {
     margin-right: 8px;
+  }
+  .contact__link {
+    font-size: 12px;
   }
 }
 .crew {
@@ -781,7 +802,7 @@ button {
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 36px;
   margin-left: 40px;
 }
 .menu__item {
@@ -809,6 +830,8 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 60px;
+    margin-left: 83px;
   }
   .menu__item {
     margin: 0px;
@@ -816,7 +839,7 @@ button {
   }
   .menu__item:nth-child(1) {
     margin-top: 0;
-    margin-left: 83px;
+    margin-left: 0px;
   }
 }
 .menuport__list {
@@ -859,6 +882,13 @@ button {
   width: 130px;
 }
 
+@media (min-width: 768px) {
+  .menuport__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
 .navigation {
   display: flex;
 }
@@ -888,6 +918,7 @@ button {
   width: 207px;
   margin-top: 12px;
   letter-spacing: 0.03em;
+  margin-top: 60px;
 }
 
 .policy__text::before {
@@ -1019,7 +1050,6 @@ button {
 .social__item {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
 }
 .social__link {
   display: flex;
@@ -1048,6 +1078,7 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  margin-top: 60px;
 }
 .social__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1056,6 +1087,11 @@ button {
   fill: rgb(255, 255, 255);
 }
 
+@media (min-width: 768px) {
+  .social__title {
+    margin-top: 0;
+  }
+}
 .hamburger {
   border: none;
   background-color: var(--second-color);

@@ -31,8 +31,7 @@
 .container-contact {
   display: flex;
   flex-direction: column;
-  width: 246px;
-  height: 81px;
+  
 }
 // .container-social {
 //   display: flex;
@@ -54,7 +53,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.container-mob{
+  width: 100vw;
+  height: 100vh;
+}
+.container-tabcontact{
+  text-align: center;
+}
 
 //<-------------tablet------------->
 @media (min-width:768px){
@@ -68,5 +73,12 @@
 .container__features{
   width: 100%;
   margin:0 auto;
+}
+.container-contact{
+  flex-direction: row;
+
+}
+.container-tabcontact{
+margin-right: 144px;
 }
 }

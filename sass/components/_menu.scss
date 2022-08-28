@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 36px;
   margin-left: 40px;
 
   &__item {
@@ -31,13 +31,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 60px;
+    margin-left: 83px;
     &__item {
       margin: 0px;
       font-size: 14px;
     }
     &__item:nth-child(1) {
       margin-top: 0;
-      margin-left: 83px;
+      margin-left: 0px;
     }
   }
 }
