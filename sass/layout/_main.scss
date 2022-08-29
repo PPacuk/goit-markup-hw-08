@@ -1,11 +1,12 @@
 .main {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../image/imgbgmob@1x.jpg);
+    url(../image/bgimgmob@1x.jpg);
   height: 400px;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
 
   &__title {
     max-width: 365px;
@@ -24,11 +25,53 @@
   }
 }
 
-//<-------------tablet------------->
-@media (min-width: 769px) {
+//<-------------Mobile------------->
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../image/tab/imgbg@1x.jpg);
-    height: 400px;
+      url(../image/bgimgmob@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../image/bgimgmob@2x.jpg);
+    }
+  }
+}
+
+//<-------------tablet------------->
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/bgimgtab@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../image/bgimgtab@2x.jpg);
+    }
+  }
+}
+
+//<-------------desktop------------->
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/bgimgdesk@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../image/bgimgdesk@2x.jpg);
+    }
   }
 }

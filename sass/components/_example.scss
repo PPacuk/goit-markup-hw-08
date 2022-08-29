@@ -43,8 +43,6 @@
     justify-content: center;
     align-items: center;
     max-width: 450px;
-    
-    
   }
   &__item{
     max-width: 450px;
@@ -88,4 +86,22 @@
     width: 100%;
     height: auto;;
   }
+}
+
+//<-------------tablet------------->
+@media (min-width:768px){
+ .example{
+max-width: 738px;
+  
+  &__list{
+    max-width: 738px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+    
+  }
+  &__card{
+   max-width: 354px;
+  }
+}
 }
