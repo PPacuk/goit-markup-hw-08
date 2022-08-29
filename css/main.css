@@ -43,7 +43,7 @@ h6 {
 
 ul,
 ol {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -119,6 +119,11 @@ img {
 
 .container-tabcontact {
   text-align: center;
+}
+
+.container-port {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -865,6 +870,7 @@ button {
   .features {
     max-width: 1170px;
     flex-wrap: nowrap;
+    padding-top: 94px;
   }
 }
 .menu {
@@ -1022,6 +1028,9 @@ button {
   color: #2196f3;
 }
 
+.portfolio {
+  display: none;
+}
 .portfolio__list {
   display: flex;
   justify-content: space-between;
@@ -1064,6 +1073,23 @@ button {
   margin-bottom: 50px;
 }
 
+@media (min-width: 768px) {
+  .portfolio {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    display: block;
+  }
+  .portfolio__title {
+    margin-top: 94px;
+  }
+  .portfolio__list {
+    justify-content: space-between;
+    max-width: 1170px;
+  }
+}
 .signup {
   margin-top: 20px;
 }
