@@ -139,6 +139,11 @@ img {
     margin-right: 144px;
   }
 }
+@media (min-width: 1200px) {
+  .containernav {
+    padding: 0;
+  }
+}
 .header {
   font-family: "Roboto";
   font-style: normal;
@@ -155,6 +160,7 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin: 0 auto;
 }
 .main__title {
   max-width: 365px;
@@ -192,12 +198,12 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimgtab@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimgdesk@1x.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimgdesk@2x.jpg);
   }
@@ -246,6 +252,11 @@ img {
   color: #ffffff;
 }
 
+@media (min-width: 1200px) {
+  .logo--dark-theme {
+    margin-left: 13vw;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -536,6 +547,18 @@ button {
   }
   .contact__link {
     font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    margin-bottom: 0;
+    right: 15px;
+    top: 26px;
+    gap: 30px;
+    margin-right: 14vw;
   }
 }
 .crew {
@@ -836,6 +859,12 @@ button {
   }
   .features__description {
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .features {
+    max-width: 1170px;
+    flex-wrap: nowrap;
   }
 }
 .menu {

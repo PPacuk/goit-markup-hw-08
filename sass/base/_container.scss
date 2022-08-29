@@ -82,3 +82,11 @@
 margin-right: 144px;
 }
 }
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .containernav {
+    padding: 0;
+  }
+}

@@ -22,4 +22,11 @@
   color: #ffffff;
 }
 
+//<-------------Desktop------------->
 
+@media (min-width: 1200px){
+  
+  .logo--dark-theme {
+  margin-left: 13vw;
+}
+}

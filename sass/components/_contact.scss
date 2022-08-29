@@ -57,7 +57,7 @@
     line-height: 40px;
     letter-spacing: 0.02em;
   }
-  &__link--footer{
+  &__link--footer {
     font-size: 14px;
     font-weight: 400;
     margin: 8px auto;
@@ -78,7 +78,9 @@
     // top: 266px;
   }
 }
+
 //<-------------tablet------------->
+
 @media (min-width: 768px) {
   .contact {
     // margin-left: 101px;
@@ -94,11 +96,26 @@
     &__adress:last-child {
       margin: 0;
     }
-    &__icon{
-      margin-right:8px;
+    &__icon {
+      margin-right: 8px;
     }
-    &__link{
+    &__link {
       font-size: 12px;
+      display: flex;
+      align-items: center;
     }
+  }
+}
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    margin-bottom: 0;
+    right: 15px;
+    top: 26px;
+    gap: 30px;
+    margin-right: 14vw;
   }
 }

@@ -7,6 +7,7 @@
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin: 0 auto;
 
   &__title {
     max-width: 365px;
@@ -61,7 +62,7 @@
 
 //<-------------desktop------------->
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/bgimgdesk@1x.jpg);
