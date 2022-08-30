@@ -1,9 +1,15 @@
-.active {
-  .active::after {
+.active::after{
+  display: none;
+}
+ 
+
+//<-------------tablet------------->
+@media (min-width:768px){
+ .active::after {
   content: '';
   display: block;
   border-bottom: 4px solid;
-  position: static;
+  position: relative;
   margin-top: -4px;
   top: 32px;
   color: #2196f3;

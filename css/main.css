@@ -256,16 +256,21 @@ a {
     flex-direction: row;
   }
 }
-.active .active::after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid;
-  position: static;
-  margin-top: -4px;
-  top: 32px;
-  color: #2196f3;
+.active::after {
+  display: none;
 }
 
+@media (min-width: 768px) {
+  .active::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid;
+    position: relative;
+    margin-top: -4px;
+    top: 32px;
+    color: #2196f3;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-style: normal;
