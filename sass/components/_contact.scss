@@ -14,10 +14,10 @@
   }
   &__icon:hover,
   &__icon:focus,
-  &__link:hover{
+  &__link:hover {
     fill: var(--hover-color);
   }
-  &__icon{
+  &__icon {
     transition: var(--trans-fill);
   }
   &__maps--highlight {
@@ -109,6 +109,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-right: 15px;
     }
   }
 }
@@ -123,13 +124,13 @@
     top: 26px;
     gap: 30px;
     margin-right: 14vw;
-    
-    &__maps{
-    width: 246px;
-    text-align: left;
+
+    &__maps {
+      width: 246px;
+      text-align: left;
     }
     &__link--footer {
-    justify-content: left;
-  }
+      justify-content: left;
+    }
   }
 }

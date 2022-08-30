@@ -598,6 +598,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 15px;
   }
 }
 @media (min-width: 1200px) {
