@@ -68,5 +68,16 @@
       margin-top: 0;
     }
   }
-  
+}
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .social{
+    justify-items: center;
+    
+    &__title{
+      text-align: left;
+    }
+  }
 }

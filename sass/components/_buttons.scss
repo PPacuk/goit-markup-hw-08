@@ -58,7 +58,7 @@ button {
   justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin: 30px auto;
+  margin: 15px auto;
   cursor: pointer;
 }
 .signup__btn {
@@ -79,4 +79,12 @@ button {
   padding-left: 42px;
   margin-left: 12px;
   cursor: pointer;
+}
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .submit-btn{
+    margin: 30px auto;
+  }
 }

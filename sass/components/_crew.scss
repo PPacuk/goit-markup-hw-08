@@ -84,3 +84,21 @@ padding-bottom: 60px;
 }
 }
 
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .crew{
+    padding-bottom: 94px;
+    &__list{
+      flex-wrap: nowrap;
+      max-width: 1170px;
+    }
+    &__card{
+      max-width: 270px;
+    }
+    &__title{
+      padding-top: 94px;
+      margin-bottom: 50px;
+    }
+    }
+}

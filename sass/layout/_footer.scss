@@ -6,3 +6,11 @@
   padding-bottom: 60px;
   justify-items: center;
 }
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .footer{
+    flex-direction: row;
+  }
+}

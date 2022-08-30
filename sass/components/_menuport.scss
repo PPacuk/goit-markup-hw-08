@@ -47,7 +47,17 @@
     &__list {
       flex-wrap: nowrap;
       justify-content: center;
-      margin-bottom: 30px;
+      margin: 60px auto 30px auto;
+    }
+  }
+}
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px) {
+  .menuport {
+    &__list {
+      margin: 94px auto 50px auto;
     }
   }
 }

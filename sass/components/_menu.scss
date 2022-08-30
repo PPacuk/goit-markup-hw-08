@@ -17,11 +17,11 @@
   }
   &__link {
     text-decoration: none;
-    transition: var(--trans);
+    transition: var(--trans-color);
   }
   &__link:hover,
   &__link:focus {
-    color: var(--hover);
+    color: var(--hover-color);
   }
 }
 //<-------------tablet------------->

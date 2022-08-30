@@ -33,3 +33,19 @@
   width: 100vw;
 }
 }
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+ .signup{
+
+  &__form{
+    flex-direction: row;
+    width: 570px;
+  }
+  &__input{
+    max-width: 358px;
+    margin-bottom: 0;
+  }
+ }
+}

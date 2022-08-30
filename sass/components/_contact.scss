@@ -12,6 +12,14 @@
     margin-top: 20px;
     text-align: center;
   }
+  &__icon:hover,
+  &__icon:focus,
+  &__link:hover{
+    fill: var(--hover-color);
+  }
+  &__icon{
+    transition: var(--trans-fill);
+  }
   &__maps--highlight {
   }
   &__maps--highlight:hover,
@@ -83,9 +91,6 @@
 
 @media (min-width: 768px) {
   .contact {
-    // margin-left: 101px;
-    // margin-top: 50px;
-    // margin-right: auto;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -103,6 +108,7 @@
       font-size: 12px;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 }
@@ -117,5 +123,13 @@
     top: 26px;
     gap: 30px;
     margin-right: 14vw;
+    
+    &__maps{
+    width: 246px;
+    text-align: left;
+    }
+    &__link--footer {
+    justify-content: left;
+  }
   }
 }

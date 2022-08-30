@@ -105,3 +105,21 @@ max-width: 738px;
   }
 }
 }
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px){
+  .example{
+    max-width: 1170px;
+
+    &__list{
+      max-width: 1170px;
+    }
+    &__card{
+      max-width: 370px;
+    }
+    &__img{
+      max-width: 370px;
+    }
+  }
+}

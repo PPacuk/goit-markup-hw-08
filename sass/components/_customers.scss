@@ -45,7 +45,6 @@
   }
   &__path {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
   }
   &__link {
     border: none;
@@ -57,16 +56,33 @@
 }
 
 //<-------------tablet------------->
-@media (min-width:768px){
-  .customers{
-
-    &__list{
+@media (min-width: 768px) {
+  .customers {
+    &__list {
       flex-basis: calc(100% / 3);
       max-width: 768px;
       margin-bottom: 60px;
     }
-    &__item{
-      man-width:226px;
+    &__item {
+      max-width: 226px;
+    }
+  }
+}
+
+//<-------------Desktop------------->
+
+@media (min-width: 1200px) {
+  .customers {
+    &__list{
+      max-width: 1170px;
+      flex-wrap: nowrap;
+    }
+    &__item {
+     min-width: 170px;
+     height: 92px;
+    }
+    &__icon{
+      margin: 0 auto;
     }
   }
 }
